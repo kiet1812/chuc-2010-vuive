@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>💌 Gửi Bùi Thảo Lam – Ngày Phụ Nữ Việt Nam 20/10</title>
+
+    <!-- Preconnect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: 100% Native Vietnamese Support (Zero fallback errors) -->
+    <!-- Playfair Display (Luxury Editorial Serif) + Dancing Script (Warm Romantic Handwriting) + Be Vietnam Pro (Clean Vietnamese Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lenis Smooth Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.css">
+
+    <!-- Tailwind CSS (Play CDN for layout utilities) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Be Vietnam Pro"', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                        hand: ['"Dancing Script"', 'cursive'],
+                    },
+                    colors: {
+                        ag: {
+                            black: '#040406',
+                            card: '#0c0c14',
+                            pink: '#FF69B4',
+                            deepPink: '#FF1493',
+                            lightPink: '#FFB6C1',
+                            pastelPink: '#FFC0CB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Bespoke Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-ag-black text-white antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- ============================================
+         BACKGROUND ATMOSPHERE CANVAS
+         ============================================ -->
+    <canvas id="ambient-canvas"></canvas>
+
+    <!-- ============================================
+         ACT 1: THE POETIC PRELUDE (HERO)
+         ============================================ -->
+    <section id="sec-hero" class="ag-stage min-h-screen flex flex-col justify-center items-center text-center px-4 relative z-10">
+        <div class="hero-container max-w-xl mx-auto flex flex-col items-center">
+            
+            <!-- Delicate Floral Monogram (No box, floating text only) -->
+            <p class="text-pink-300 tracking-widest text-xs uppercase font-sans font-semibold mb-4">
+                ✧ 20 · 10 · VIETNAMESE WOMEN'S DAY ✧
+            </p>
+
+            <!-- Main Dedication in Editorial Serif -->
+            <h1 class="hero-title font-display text-white">
+                Dear Bùi Thảo Lam
+            </h1>
+
+            <!-- Floral Divider -->
+            <div class="w-24 h-px bg-gradient-to-r from-transparent via-pink-400/60 to-transparent my-4"></div>
+
+            <!-- Poetic Intro in Dancing Script -->
+            <p class="hero-subtitle font-hand text-pink-100">
+                Nhân ngày 20/10, mình thay mặt tất cả bạn nam lớp AI2 có đôi lời chúc dành cho Lam
+            </p>
+
+            <!-- Scroll Cue -->
+            <div class="hero-scroll-cue font-sans mt-8 flex flex-col items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+                <span class="text-xs uppercase tracking-widest text-neutral-400">Cuộn xuống để đọc</span>
+                <span class="scroll-arrow text-pink-400 text-lg">↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACT 2: THE LETTER MANUSCRIPT (BẢN THẢO THƯ TAY)
+         ============================================ -->
+    <section id="sec-manuscript" class="ag-stage min-h-screen relative z-10 flex items-center justify-center px-4 py-16">
+        <div class="manuscript-parchment max-w-xl w-full relative rounded-3xl p-8 sm:p-12 backdrop-blur-2xl">
+            
+            <!-- Fine Ruled Lines Pattern -->
+            <div class="parchment-lines" aria-hidden="true"></div>
+            
+            <!-- Left Pink Ribbon Accent -->
+            <div class="parchment-margin-ribbon" aria-hidden="true"></div>
+
+            <div class="relative z-10 space-y-7">
+                
+                <!-- Greeting with Drop Cap -->
+                <div class="reveal-text">
+                    <p class="manuscript-greeting font-display text-3xl sm:text-4xl text-white font-bold tracking-wide">
+                        Chào Lam nhé,
+                    </p>
+                </div>
+
+                <!-- Paragraph 1 -->
+                <div class="reveal-text">
+                    <p class="font-hand text-2xl sm:text-3xl text-pink-100 leading-loose">
+                        Nhân ngày Phụ nữ Việt Nam 20/10, mình muốn gửi đến bạn những lời chúc tốt đẹp và chân thành nhất từ tận đáy lòng.
+                    </p>
+                </div>
+
+                <!-- Paragraph 2 (together with PeTerKar) -->
+                <div class="reveal-text">
+                    <p class="font-hand text-2xl sm:text-3xl text-pink-100 leading-loose">
+                        Dù chưa được tiếp xúc, nói chuyện với Lam nhiều nhưng có lẽ dần dần rồi chúng ta sẽ có nhiều cơ hội trao đổi, học hỏi lẫn nhau hơn.
+                    </p>
+                    <div class="pt-3 flex justify-end">
+                        <span class="font-hand text-2xl text-pink-300/80">~ PeTerKar ~</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACT 3: HEARTFELT WISHES (CHẢY TỰ NHIÊN, KHÔNG CHIA MỤC 01, 02)
+         ============================================ -->
+    <section id="sec-wishes" class="ag-stage min-h-screen relative z-10 flex flex-col justify-center items-center px-4 py-16">
+        <div class="max-w-xl w-full mx-auto space-y-8">
+            
+            <!-- Stanza 1: Pink Binder Note with Top Punch Holes -->
+            <div class="pink-binder-note rounded-2xl p-7 sm:p-9 relative overflow-hidden backdrop-blur-xl">
+                <!-- Top Binder Punch Holes -->
+                <div class="note-binder-holes flex justify-between items-center px-2 mb-4 pb-2 border-b border-pink-400/20" aria-hidden="true">
+                    <span class="binder-hole"></span>
+                    <span class="binder-hole"></span>
+                    <span class="binder-hole"></span>
+                    <span class="binder-hole"></span>
+                    <span class="binder-hole"></span>
+                    <span class="binder-hole"></span>
+                </div>
+                <p class="font-hand text-2xl sm:text-3xl text-white leading-relaxed">
+                    Mình chúc Lam luôn xinh đẹp, nụ cười luôn rạng ngời trên môi và tự tin tỏa sáng theo cách rất riêng của bạn.
+                </p>
+            </div>
+
+            <!-- Stanza 2: Lời tự tình giữa trời sao (Floating Poetic Quote) -->
+            <div class="floating-poetic-quote text-center py-6 px-4 relative">
+                <span class="quote-mark font-display text-5xl text-pink-400/40 select-none block leading-none mb-2">“</span>
+                <p class="font-hand text-2xl sm:text-3xl text-pink-100 font-medium leading-relaxed max-w-lg mx-auto">
+                    Mong rằng mỗi bước đường bạn đi qua đều gặp nhiều thuận lợi, bình yên trong tâm hồn và luôn được cuộc đời yêu thương thật nhiều.
+                </p>
+                <span class="quote-mark font-display text-5xl text-pink-400/40 select-none block leading-none mt-2">”</span>
+            </div>
+
+            <!-- Stanza 3: Transparent Dashed Note -->
+            <div class="transparent-dashed-note rounded-2xl p-7 sm:p-9 relative backdrop-blur-sm">
+                <div class="flex items-start gap-4">
+                    <div class="text-3xl text-pink-400 flex-shrink-0 pt-1">
+                        🌸
+                    </div>
+                    <div>
+                        <p class="font-hand text-2xl sm:text-3xl text-white leading-relaxed">
+                            Dù cuộc sống có bận rộn hay nhiều thử thách, hãy luôn nhớ dành thời gian lắng nghe, chăm sóc và trân quý chính mình nhé! 💕
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACT 4: THE BLOOMING ROSE & VISUAL CLIMAX
+         ============================================ -->
+    <section id="sec-rose" class="ag-stage min-h-screen relative z-10 flex flex-col justify-center items-center text-center px-4 py-16 overflow-hidden">
+        
+        <!-- Rose Floating Petals Layer -->
+        <div id="rose-petals-layer" class="absolute inset-0 pointer-events-none z-0"></div>
+
+        <div class="relative z-10 flex flex-col items-center max-w-md mx-auto">
+            
+            <!-- Animated Glowing Vector Rose -->
+            <div id="rose-graphic" class="relative w-44 h-44 sm:w-56 sm:h-56 mb-6 flex items-center justify-center">
+                <div class="rose-halo-glow"></div>
+                
+                <svg class="w-full h-full drop-shadow-[0_0_35px_rgba(255,20,147,0.5)]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="rosePetalGrad1" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#FF69B4"/>
+                            <stop offset="70%" stop-color="#FF1493"/>
+                            <stop offset="100%" stop-color="#800040"/>
+                        </radialGradient>
+                        <radialGradient id="rosePetalGrad2" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#FFFFFF"/>
+                            <stop offset="60%" stop-color="#FFB6C1"/>
+                            <stop offset="100%" stop-color="#FF1493"/>
+                        </radialGradient>
+                    </defs>
+
+                    <!-- Outer Petals (Animated on Scroll) -->
+                    <path class="rose-outer-petal" d="M100 20 C130 40 170 70 160 110 C150 150 110 170 100 170 C90 170 50 150 40 110 C30 70 70 40 100 20Z" fill="url(#rosePetalGrad1)" opacity="0.6"/>
+                    <path class="rose-outer-petal" d="M100 35 C140 35 165 75 150 115 C135 155 105 160 100 160 C95 160 65 155 50 115 C35 75 60 35 100 35Z" fill="url(#rosePetalGrad1)" opacity="0.8"/>
+                    
+                    <!-- Mid Petals -->
+                    <path class="rose-mid-petal" d="M100 50 C125 50 145 75 135 105 C125 135 105 140 100 140 C95 140 75 135 65 105 C55 75 75 50 100 50Z" fill="url(#rosePetalGrad2)" opacity="0.9"/>
+                    
+                    <!-- Core Spiral -->
+                    <circle cx="100" cy="95" r="22" fill="#FF1493"/>
+                    <path d="M100 80 C110 80 118 88 116 97 C114 106 105 110 98 107 C92 104 90 95 95 89 C98 85 103 86 104 90 C105 94 100 96 98 94" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                </svg>
+            </div>
+
+            <!-- Typography in Editorial Serif -->
+            <h3 class="rose-title font-display text-4xl sm:text-5xl text-white mb-2 drop-shadow">
+                Happy Women's Day
+            </h3>
+
+            <p class="rose-date font-display font-bold text-3xl sm:text-4xl text-pink-400 tracking-widest mb-4">
+                20 · 10
+            </p>
+
+            <p class="font-hand text-2xl text-neutral-300 max-w-md leading-relaxed">
+                Thay mặt anh em lớp AI2 mình xin chúc Lam có một ngày lễ vui vẻ bên bạn bè, suôn sẻ trong học tập và nhận được nhiều bó hoa từ các bạn nam.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACT 5: THE CELESTIAL FINALE (CLOSING & CONFETTI)
+         ============================================ -->
+    <section id="sec-finale" class="ag-stage min-h-screen relative z-10 flex flex-col justify-center items-center text-center px-4 py-16">
+        
+        <div class="book-page-card max-w-md w-full relative rounded-2xl p-8 sm:p-11 backdrop-blur-md text-center overflow-hidden">
+            
+            <!-- Ruled Lines & Margin Ribbon (Giống trang sách / bản thảo thư tay) -->
+            <div class="parchment-lines" aria-hidden="true"></div>
+            <div class="parchment-margin-ribbon" aria-hidden="true"></div>
+
+            <div class="relative z-10">
+                <div class="finale-sparkle-icon text-2xl text-pink-400 mb-4 animate-pulse">
+                    ✦ ✧ ✦
+                </div>
+
+                <p class="finale-intro font-hand text-2xl sm:text-3xl text-neutral-300 mb-3">
+                    Với tất cả sự trân trọng & mến thương,
+                </p>
+
+                <h3 id="interactive-signature" class="finale-sig font-display text-3xl sm:text-4xl text-pink-300 mb-6 cursor-pointer select-none transition-transform active:scale-95 font-semibold" title="Nhấn vào đây để bắn pháo hoa!">
+                    Tập thể anh em lớp AI2 ❤️
+                </h3>
+
+                <p class="text-xs font-sans uppercase tracking-widest text-neutral-400 mb-8">
+                    (Chạm vào chữ ký để thả pháo chúc mừng)
+                </p>
+
+                <!-- Replay CTA -->
+                <button id="btn-replay" class="replay-button font-sans group">
+                    <span class="replay-icon transition-transform group-hover:-translate-y-1">↑</span>
+                    <span>Cuộn Về Đầu Thư</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Footer watermark -->
+        <p class="font-sans text-xs text-neutral-400 mt-10 tracking-widest uppercase">
+            20/10 vui vẻ nhéee ♥
+        </p>
+
+    </section>
+
+    <!-- ============================================
+         CORE DEPENDENCY SCRIPTS (CDN ONLY)
+         ============================================ -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Application Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
